@@ -1,0 +1,16 @@
+<div class="p-5 mb-4 bg-body-tertiary rounded-3 mt-5">
+      <div class="container-fluid py-1">
+        <h1 class="display-5 fw-bold">Your ToDo List App</h1>
+        <p class="col-md-8 fs-4">
+        "Experience seamless task management and productivity enhancement with our feature-rich todo application, designed to streamline your workflow and keep you focused on what matters most."
+        
+        
+        
+        </p>
+        <% if user_signed_in? %>
+        <%= link_to 'Add Task', new_task_path, class: "btn btn-primary btn-lg" %>
+        <% else %>
+        <%= link_to 'Join Now', new_user_registration_path, class: "btn btn-primary btn-lg" %>
+        <% end %>
+      </div>
+    </div>
